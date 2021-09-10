@@ -28,6 +28,11 @@
 .forms{
     flex-direction: column;
     padding: 0px;
+    padding: 0px 2% 22px 2%;
+}
+#box-form {
+
+    padding-right: 0px;
 }
 
 /* Utility */
