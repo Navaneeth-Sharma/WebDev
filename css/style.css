@@ -86,7 +86,7 @@ html {
   content: "";
   /* background-color: black; */
   position: absolute;
-  background-image: url("https://github.com/Navaneeth-Sharma/WebDev/blob/main/img/bg_1.png");
+  background-image: url("https://raw.githubusercontent.com/Navaneeth-Sharma/WebDev/main/img/bg_1.png");
   background-size:cover;
   height: 600px;
   width: 100%;
