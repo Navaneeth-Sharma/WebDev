@@ -86,8 +86,8 @@ html {
   content: "";
   /* background-color: black; */
   position: absolute;
-  background: url("https://source.unsplash.com/user/jackie/likes/1600x900") no-repeat center center/cover;
-
+  background: url("https://github.com/Navaneeth-Sharma/WebDev/blob/main/img/bg_1.png");
+  background-size:cover;
   height: 600px;
   width: 100%;
   z-index: -1;
