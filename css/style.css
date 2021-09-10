@@ -1,0 +1,254 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+  --var-pix: 1000px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* Navigation Bar LOGO and Image */
+#logo {
+  margin: 3px 5px;
+}
+#logo img {
+  height: 50px;
+  margin: 3px 5px;
+}
+/* Navigation Bar List Styling */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+#navbar ul li a {
+  display: block;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 40px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  /* transition-duration: 1s; */
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  /* background-color: black; */
+  position: absolute;
+  background: url("../img/bg_1.png") no-repeat center center/cover;
+
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#home::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Services Section */
+.services-container {
+  margin-top: 90px;
+}
+.services {
+  /* padding: 10px */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 3px;
+}
+
+.services .box {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.027);
+}
+
+.services .box img {
+  border-radius: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box img {
+  width: 300px;
+  height: 200px;
+}
+
+/* About Us Section */
+.aboutus-section {
+  background-color: rgba(16, 0, 59, 0.973);
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 35px 10px 35px;
+  padding-bottom: 30px;
+}
+.container img {
+  width: 50%;
+}
+
+/* contactus */
+
+.footer_container {
+  display: flex;
+  justify-content: center;
+  padding: 3px 10px;
+}
+.footer_container img {
+  width: 40px;
+  margin: 10px 3px 3px 3px;
+}
+.forms {
+  display: flex;
+  justify-content: center;
+  padding: 16px 10% 22px 10%;
+  margin-bottom: 60px;
+}
+#box-form {
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+  align-items: center;
+  text-align: center;
+}
+.forms2 form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.forms2 form input {
+  padding: 6px;
+}
+#btn2 {
+  background-color: rgba(0, 0, 0, 0.747);
+  margin-top: 15px;
+  border-radius: 20px;
+  color: white;
+  padding: 12px 20px 12px 20px;
+  cursor: pointer;
+}
+#btn2:hover {
+  background-color: rgb(134, 41, 25);
+  color: rgb(255, 255, 255);
+}
+#textarea {
+  padding-bottom: 34px;
+}
+/* Media Queries */
+@media (max-width: 1000px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .services-container {
+    margin-top: 90px;
+  }
+}
+/* Utility */
+.h-primary {
+  font-size: 2.8rem;
+  padding: 12px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 12px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.p-primary {
+  font-size: 1.3rem;
+}
+
+.btn {
+  margin: 30px 0px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  background-color: rgba(116, 8, 8, 0.568);
+  color: white;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(0, 143, 24, 0.466);
+}
+
+.center {
+  text-align: center;
+}
